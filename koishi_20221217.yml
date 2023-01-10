@@ -1,0 +1,60 @@
+host: 0.0.0.0
+port: 5140
+maxPort: 5149
+plugins:
+  group:basic:
+    help: null
+    rate-limit: null
+    locales: null
+    commands: null
+    ~admin: null
+    ~bind: null
+    $collapsed: true
+  group:console:
+    console:
+      open: true
+    dataview: null
+    logger: null
+    insight: null
+    market:
+      registry:
+        endpoint: https://registry.npmmirror.com
+      search:
+        endpoint: https://registry.koishi.chat/index.json
+    sandbox: null
+    status: null
+    auth: null
+    $collapsed: true
+  group:database:
+    ~database-sqlite: null
+    database-mysql:
+      password: '123456'
+      port: 23306
+      host: maiiiiiid.fun
+    ~database-mongo: null
+  group:adapter:
+    adapter-onebot:
+      protocol: ws-reverse
+      endpoint: ws://127.0.0.1:8080
+      selfId: '1763938305'
+      gocqhttp:
+        password: maid521513
+        enabled: true
+    ~adapter-discord: null
+    ~adapter-telegram: null
+    ~adapter-kook: null
+    ~adapter-feishu: null
+    gocqhttp: null
+  ~:uyy2zu: {}
+  echo:573q85: {}
+  rss:bprh2q: {}
+prefix:
+  - ''
+  - ''
+  - ''
+  - ''
+nickname:
+  - maid
+  - Maid
+  - 妹抖
+  - 妹抖酱

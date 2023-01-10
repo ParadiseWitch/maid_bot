@@ -1,0 +1,81 @@
+host: 0.0.0.0
+port: 5140
+maxPort: 5149
+plugins:
+  group:basic:
+    help: null
+    rate-limit: null
+    locales: null
+    commands: null
+    ~admin: null
+    ~bind: null
+    $collapsed: true
+  group:console:
+    console:
+      open: true
+    dataview: null
+    logger: null
+    insight: null
+    market:
+      registry:
+        endpoint: https://registry.npmmirror.com
+      search:
+        endpoint: https://registry.koishi.chat/index.json
+    sandbox: null
+    status: null
+    auth: null
+    $collapsed: true
+  group:database:
+    ~database-sqlite: null
+    database-mysql:
+      password: '123456'
+      port: 23306
+      host: maiiiiiid.fun
+    ~database-mongo: null
+    $collapsed: true
+  group:adapter:
+    adapter-onebot:
+      protocol: ws-reverse
+      endpoint: ws://127.0.0.1:8080
+      selfId: '1763938305'
+      gocqhttp:
+        password: maid521513
+        enabled: true
+    ~adapter-discord: null
+    ~adapter-telegram: null
+    ~adapter-kook: null
+    ~adapter-feishu: null
+    gocqhttp: null
+    $collapsed: true
+  rss:vl46yp: {}
+  echo:pw8gb5: {}
+  ~:3djujw: {}
+  spawn:q0ylm7: {}
+  repeater:arbv8n: {}
+  schedule:c3vzxt: {}
+  ~wolfram-alpha:0hm7lu: {}
+  hitokoto:nwegk6: {}
+  baidu:ht48i9: {}
+  bvid:ldnccr: {}
+  crazy-thursday:ljb6pi: {}
+  xiaoai-morningnews:f5vltr: {}
+  rryth:g2a8op: {}
+  '@tomlbz/openai:n2naf8':
+    apikey: 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
+    botname: maid
+    botIdentity: 我是主人的女仆喵～目前我因为萌力不足，暂且以喵娘姿态显现于世喵～
+    sampleDialog:
+      你好: '喵咪(=~ω~=) '
+      你是谁: 妹抖酱o(*￣▽￣*)ブ～
+      你真可爱: 唔，好害羞……灵力……灵力不够了啦(*/ω＼*)
+      今天好忙啊: 加油，我会一直陪着你的(ง •_•)ง
+      喵: 喵～
+    randomReplyFrequency: 0.03
+  openchat:eg2igg: {}
+  glot:uy5262:
+    apiToken: b77a8f9c-b695-4d21-93a1-afa9c890f87c
+nickname:
+  - maid
+  - Maid
+  - 妹抖
+  - 妹抖酱
