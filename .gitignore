@@ -17,3 +17,9 @@ tsconfig.tsbuildinfo
 *.njsproj
 *.sln
 logs
+.v2sub
+
+*temp*
+lib
+
+package-lock.json

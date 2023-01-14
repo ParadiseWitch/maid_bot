@@ -62,7 +62,9 @@ async function help() {
 }
 
 async function updateSubscription(i) {
-  await $`rm ${SERVERS_JSON_FILE}`
+  if (fs.existsSync(SERVERS_JSON_FILE)) {
+    await $`rm ${SERVERS_JSON_FILE}`
+  }
   await showAllServers()
 }
 
@@ -93,7 +95,7 @@ async function changeV2rayConfigByIndex(i) {
   mainConf.users.id = server.id
   mainConf.users.alterId = server.aid
   confExmaple.outbounds[0].settings.vnext[0] = mainConf
-  const newConfFileName = `./config/config_${new Date().getTime()}.json`
+  const newConfFileName = `${STORE_DIR}config_${new Date().getTime()}.json`
   await fs.writeJson(newConfFileName, confExmaple)
   await $`sudo cp ./${newConfFileName} ${CONFIG_PATH}`
   await $`${RESTART_V2RAY_CMD}`

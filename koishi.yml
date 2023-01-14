@@ -47,7 +47,8 @@ plugins:
     ~adapter-feishu: null
     gocqhttp: null
     $collapsed: true
-  rss:vl46yp: {}
+  dabai: null
+  ~rss:vl46yp: {}
   echo:pw8gb5: {}
   ~:3djujw: {}
   spawn:q0ylm7: {}
@@ -71,7 +72,7 @@ plugins:
       今天好忙啊: 加油，我会一直陪着你的(ง •_•)ง
       喵: 喵～
     randomReplyFrequency: 0.03
-  openchat:eg2igg: {}
+  ~openchat:eg2igg: {}
   glot:uy5262:
     apiToken: b77a8f9c-b695-4d21-93a1-afa9c890f87c
 nickname:
