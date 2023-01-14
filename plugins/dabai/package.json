@@ -9,7 +9,9 @@
     "dist"
   ],
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "main": "node ./lib/index.js"
+  },
   "keywords": [
     "chatbot",
     "koishi",
@@ -19,7 +21,8 @@
     "koishi": "^4.10.5"
   },
   "dependencies": {
-    "got": "^12.5.3",
+    "cheerio": "^1.0.0-rc.12",
+    "got": "11.8.3",
     "hpagent": "^1.2.0"
   }
 }
