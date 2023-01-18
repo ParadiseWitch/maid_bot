@@ -23,7 +23,7 @@ plugins:
         endpoint: https://registry.koishi.chat/index.json
     sandbox: null
     status: null
-    auth: null
+    ~auth: null
     $collapsed: true
   group:database:
     ~database-sqlite: null
@@ -34,7 +34,7 @@ plugins:
     ~database-mongo: null
     $collapsed: true
   group:adapter:
-    adapter-onebot:
+    ~adapter-onebot:
       protocol: ws-reverse
       endpoint: ws://127.0.0.1:8080
       selfId: '1763938305'
@@ -47,7 +47,6 @@ plugins:
     ~adapter-feishu: null
     gocqhttp: null
     $collapsed: true
-  dabai: null
   ~rss:vl46yp: {}
   echo:pw8gb5: {}
   ~:3djujw: {}
@@ -75,6 +74,9 @@ plugins:
   ~openchat:eg2igg: {}
   glot:uy5262:
     apiToken: b77a8f9c-b695-4d21-93a1-afa9c890f87c
+  dabai:nqpdnd: {}
+  ~github:7jhzf0: {}
+  ~steaminfo:cvhngw: {}
 nickname:
   - maid
   - Maid

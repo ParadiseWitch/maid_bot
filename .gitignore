@@ -23,3 +23,5 @@ logs
 lib
 
 package-lock.json
+.vite
+openaimemory
